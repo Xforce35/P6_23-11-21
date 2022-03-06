@@ -5,7 +5,7 @@ import PhotographerCard from './templates/PhotographerCard.js';
 class App {
   constructor() {
     this.$photographersWrapper = document.querySelector(".photographer_section");
-    this.photographersApi = new PhotographerApi("/data/photographers.json");
+    this.photographersApi = new PhotographerApi("data/photographers.json");
   }
   //Classe pour lancer l'api et retourner les données pour chacun des photographes
   async main() {
