@@ -6,7 +6,7 @@ import ContactForm from './models/ContactForm.js';
 
 class App{
   constructor(){
-    this.photographersApi = new PhotographerApi("data/photographers.json");
+    this.photographersApi = new PhotographerApi("/data/photographers.json");
     this.$profileWrapper = document.querySelector(".photographe_header");
     this.$mediasWrapper = document.querySelector(".displayMediaSection");
   }
