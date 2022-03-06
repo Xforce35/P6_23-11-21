@@ -1,4 +1,4 @@
-import Api from "./Api.js"
+import Api from "../Api.js"
 
 class PhotographerApi extends Api {
     constructor(url) {
