@@ -1,8 +1,7 @@
 class LightBox {
     constructor(medias) {
         this.currentIndex = 0;
-        this.medias = medias
-        // console.log(this.medias)
+        this.medias = medias;
     }
 
     // initialiser la lightbox lors d'un clic sur un média, appeler les fonctions permettant de naviguer dans la lightbox
@@ -13,7 +12,6 @@ class LightBox {
         main.setAttribute("aria-hidden", "true");
         lightBox.style.display = 'block';
         this.currentIndex = this.medias.findIndex(media => media.id == mediaId);
-        // console.log('on lance la lightbox')
         this.show();
         this.listen();
         this.close();
@@ -37,7 +35,6 @@ class LightBox {
     }
     // passer au média suivant
     next() {
-            // console.log('on avance')
             this.currentIndex++;
                 if (this.currentIndex > (this.medias.length -1)) {
                     this.currentIndex = 0;
@@ -46,7 +43,6 @@ class LightBox {
         }
     // passer au media précédent
     previous() {
-        // console.log('on recule')
         this.currentIndex--; 
         if (this.currentIndex < 0) {
             this.currentIndex = this.medias.length - 1;
@@ -72,13 +68,10 @@ class LightBox {
             }
             else if (key.code == "ArrowRight") {
                 this.next()
-                // console.log('on avance')
             }
             else if (key.code == "ArrowLeft") {
                 this.previous()
-                // console.log('on recule')
             }
-            // console.log('123');
         })
     }   
 }

@@ -5,18 +5,8 @@ import VideoLightBox from "../templates/VideoLightbox.js"
 class Video extends Media {
     constructor(data) {
         super (data)
-		// this._title = data.title
         this._src = data.video
-        // console.log(this.title);
 	    }
-
-        // get title() {
-        //     return this._title
-        // }
-
-        // get name() {
-        //     return this._title
-        // }
 
         get src() {
             return this._src

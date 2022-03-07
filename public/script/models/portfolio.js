@@ -9,20 +9,16 @@ class Portfolio {
         this.$boxWrapper = document.querySelector(".boxLikesPrice");
         this.price = price;
         this.currentIndex = 0;
-        // console.log('a',this.price);
-        console.log(this.medias.date)
     }
 
     //fonction qui ajoute les  medias
     add(media) {
         this.medias.push(media)
-        // console.log(this.medias);
     }
 
     //fonction qui affiche les  medias
     display() {
         this.medias.forEach(media => {
-            // media.render();
             this.$mediasWrapper.appendChild(media.render());
         })
     }
@@ -59,7 +55,6 @@ class Portfolio {
     countTotal() {
         this.totalLikes = this.medias.reduce((total , media) => total + media.likes, 0);
     }
-    //         console.log('e', this.totalLikes)
     
     
     // fonction pour ecouter le menu de tri par filtre
@@ -94,6 +89,7 @@ class Portfolio {
             });
         }
     }
+
     //fonction qui permets de filtrer les médias par filtre losqu'on clique sur l'un d'eux
     filter(filter) {
         switch(filter) {
@@ -107,9 +103,8 @@ class Portfolio {
                     this.filterByTitle();
                     break;
         }
-        // console.log([filter.length]);
-        // this.optionscontainers = filter
     }
+
     //fonction pour filtrer les medias par popularité
     filterByPopularity() {
         let btnSort = document.querySelector('.sort-btn');
@@ -119,6 +114,7 @@ class Portfolio {
             return b.likes - a.likes
         })
     }
+
     //fonction pour filtrer les medias par date
     filterByDate() {
         let btnSort = document.querySelector('.sort-btn');
@@ -128,6 +124,7 @@ class Portfolio {
             return new Date(a.date).valueOf() - new Date (b.date).valueOf();
         })
     }
+
     //fonction pour filtrer les medias par titre
     filterByTitle() {  
         let btnSort = document.querySelector('.sort-btn');
@@ -135,18 +132,19 @@ class Portfolio {
         btnSort.innerHTML = `Titre <span class="fas fa-chevron-down arrow-down" role="button"></span>`;
         this.medias = this.medias.sort((a, b) => a.title.localeCompare(b.title))
     }
+
     //fonction pour fermer le menu de tri par filtre
     closeDropdown() {
-        // console.log('on veut fermer');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
         hiddenSort[0].style.display = "none";
     }
+
     //fonction pour ouvrir le menu de tri par filtre
     openDropdown() {
-        // console.log('on veut ouvrir');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
         hiddenSort[0].style.display = 'block';
     }
+
     //fonction pour fermer avec la touche escape le menu de tri par filtre
     keyboardDropdown() {
         document.addEventListener('keydown', (key) => {
@@ -157,15 +155,18 @@ class Portfolio {
             };
         })
     }   
+
     //fonction pour mettre a jour les likes du photographe
     updateTotal() {
        document.querySelector('.boxLikesPrice__likes').innerText = this.totalLikes;
     }
+
     //fonction pour mettre a jour les medias lorsqu'ils ont etait filtré
     updateMedia() {
         document.querySelector(".displayMediaSection").innerHTML = "";
         this.display();
     }
+    
     //fonction pour ouvrir la lightbox lorsqu'on clique sur un média
     LightBox(){
         let lightBox = new LightBox(this.medias)
@@ -175,9 +176,7 @@ class Portfolio {
                     item.addEventListener("click", (e) =>
                     {
                         let mediaId = e.target.closest('article').getAttribute('data-id');
-                        console.log(e.target.closest('article').getAttribute('data-id'))
-                        // console.log(mediaId);
-                        lightBox.start(mediaId);
+                        console.log(e.target.closest('article').getAttribute('data-id'));
                     })
                 })
     }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../public/assets/images/logo.svg"/>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+    <title>Fisheye - photographe</title>
+  </head>
+  <body>
+    <header role="banner" class="header-photographer" aria-label="Vous êtes sur la page d'un photographeur">
+      <a href="./index.html" aria-label="Lien vers la page d'accueil de Fisheye">
+      <img src="./public/assets/images/logo.svg" class="header-photographer_logo" title="logo Fisheye, logo rouge sur un fond blanc"/></a>
+    </header>
+    <main id="main">
+
+      <!--ZONE OU ON AFFICHE LA DESCRIPTION DU PHOTOGRAPHEUR-->
+      <div class="photographe_header"></div>
+
+      <!--BARRE POUR LES FILTRES-->
+      <div class="works-sort">
+        <span aria-label="Choix du tri des photos" id="sort-text">Trier par</span>
+        <div id="sort-wrapper">
+          <button type="button" role="button" class="sort-btn" aria-haspopup="listbox" aria-expanded="false"  aria-label="Tri actuel par Popularité">Popularité
+            <span class="fas fa-chevron-down arrow-down"></span>
+          </button>
+            <ul class="hidden-sort" role="listbox"   aria-labelledby="select-filter-by" aria-activedescendant="popularity">
+              <li class="sort sort-radius-1" role='option' data-filter="popularity" aria-label="Tri actuel par Popularité" aria-selected="true"><button type="button" data-filter="popularity" class="style">Popularité <span class="fas fa-chevron-up arrow-up-close" aria-hidden="true"></span></button></li>
+              <li class="sort sort-li" role='option' data-filter="date" aria-label="Tri actuel par Date" aria-selected="false"><button type="button" data-filter="date" class="style">Date</button></li>
+              <li class="sort sort-radius-2" role='option' data-filter="title" aria-label="Tri actuel par Titre" aria-selected="false"><button type="button" data-filter="title" class="style">Tître</button></li>
+            </ul>
+        </div>
+      </div>
+
+      <!--ZONE OU ON AFFICHE LES MEDIAS DU PHOTOGRAPHE-->
+      <div class="displayMediaSection"></div>
+
+      <!--MODAL LIGHTBOX-->      
+      <div class="works-lightbox" aria-hidden="true">
+        <article class="lightbox-body" role='dialog'>          
+            <span class="fas fa-times close-lightbox-icon" role="button" title="Close dialog"></span>
+            <span class="fas fa-chevron-left left-arrow-lightbox" role="button" title="Previous image"></span>
+            <span class="fas fa-chevron-right right-arrow-lightbox" role="button" title="Next image"></span>
+            <div class="works-lightbox-contain" role="display media"></div>
+        </article>
+      </div>
+
+      <!--BOX AVEC LE PRIX ET LES LIKES-->
+      <div class="boxLikesPrice"></div>
+    
+    </main>
+
+    <!--MODAL CONTACT-->
+    <div id="contact_modal" role="dialog" aria-labelledby="contact-me" aria-modal="true">
+      <div class="modal">
+        <header tabindex="0">
+          <h2 id="contact-me">Contactez-moi</h2>
+          <h2 id="contact-me-name"></h2>
+        </header>
+        <form class="form-modal">
+          <div>
+            <label for="first">Prénom</label>
+            <input class="text-control" type="text" id="first" name="first" minlength="2"/>
+            <span id="error-first"></span>
+            <br />
+          </div>
+          <div>
+            <label for="last">Nom</label>
+            <input class="text-control" type="text" id="last" name="last" minlength="2"/>
+            <span id="error-last"></span>
+            <br />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input class="text-control" type="email" id="email" name="email" />
+            <span id="error-email"></span>
+            <br />
+          </div>
+          <div class="message-div">
+            <label for="message">Votre message</label>
+            <textarea class="text-control" id="message" name="message"></textarea>
+            <span id="error-message"></span>
+            <br />
+          </div>
+          <button class="contact_button" type="submit">Envoyer</button>
+        </form>
+        <button aria-label="close contact form" class="modal_cross" role="button">
+          <img class="modal_cross-icons" src="../public/assets/icons/close.svg" alt="Close Contact form" />
+        </button>
+      </div>
+    </div>
+    <script src="public/script/photographer.js" type="module"></script>
+  </body>
+</html>

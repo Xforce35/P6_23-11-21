@@ -2,6 +2,7 @@ class ContactForm {
   constructor (namePhotographer) {
       this.namePhotographer = namePhotographer
   }
+  
   //fonction pour ouvrir le modal
   openModal() {
     const modal = document.getElementById("contact_modal");
@@ -13,6 +14,7 @@ class ContactForm {
     nameHeader.innerText = `${this.namePhotographer}`;
     this.startModal();
   }
+
   //fonction pour lançer plusieurs fonctions
   startModal() {
     const fisrtElement = document.getElementById("first");
@@ -21,6 +23,7 @@ class ContactForm {
     this.closeModal;
     fisrtElement.focus();
   }
+
   //fonction pour fermer le modal
   closeModal() {
     const modal = document.getElementById("contact_modal");
@@ -31,6 +34,7 @@ class ContactForm {
     modal.style.display = 'none';
     contactBtn.focus(); 
   }
+
   //fonction pour fermer le modal avec la touche escape
   keyboard() {
     document.addEventListener('keydown', (key) => {
@@ -39,6 +43,7 @@ class ContactForm {
         }            
       });
   }
+
   //fonction pour ecouter les changements des différents input de notre modal
   listenForm() {
     document.getElementById('first').addEventListener('input', () => {
@@ -72,6 +77,7 @@ class ContactForm {
       this.closeModal();
     })
   }
+
   //fonction pour afficher les données que l'utilisateur a entré avec le console.log
   payLoad () {
     let first = document.getElementById('first').value;
@@ -94,6 +100,7 @@ class ContactForm {
         });
       this.closeModal();
   }
+
   //fonction qui permets de valider le prénom
   validateFirstName () {
     let el = document.getElementById('first')
@@ -111,6 +118,7 @@ class ContactForm {
     this.hideError (el);
     return true
   };
+
   //fonction qui permets de valider le nom
   validateLastName () {
     let el = document.getElementById('last')
@@ -128,6 +136,7 @@ class ContactForm {
     this.hideError (el);
     return true
   };
+
   //fonction qui permets de valider l'email
   validateEmail () {
     let el = document.getElementById('email')
@@ -140,6 +149,7 @@ class ContactForm {
     this.hideError (el);
     return true
   };
+
   //fonction qui permets de valider le message
   validateMessage () {
     let el = document.getElementById('message')
@@ -156,6 +166,7 @@ class ContactForm {
     this.hideError(el);
     return true
   };
+
   //fonction pour afficher les messages et changer le style
   ShowError(el, message) {
     let name = el.getAttribute('id');
@@ -163,13 +174,13 @@ class ContactForm {
     document.querySelector(`#error-${name}`).innerText = message;
     document.querySelector(`#error-${name}`).classList.add("error-message");
   }
+
   //fonction pour cacher les messages et retirer le style
   hideError(el) {
     let name = el.getAttribute('id');
     el.classList.remove("error");
     document.querySelector(`#error-${name}`).innerText = '';
   }
-
 }
 
 export default ContactForm

@@ -9,15 +9,6 @@ class Image extends Media {
         this._src = data.image
 	    }
 
-
-    // get title() {
-    //     return this._title
-    // }
-
-    // get name() {
-    //     return this._title
-    // }
-
     get src() {
         return this._src
     }

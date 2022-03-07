@@ -39,8 +39,7 @@ class Media {
     
     toggle(){
         let heartDom = document.querySelector(`.displayMediaSection__mediaCard__desc__likes[data-id="${this._id}"]`)
-         
-        // heartDom.addEventListener('click', () => {
+
             if (this.hasBeenLiked)
             {
                 this.dislike();
