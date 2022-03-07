@@ -177,6 +177,7 @@ class Portfolio {
                     {
                         let mediaId = e.target.closest('article').getAttribute('data-id');
                         console.log(e.target.closest('article').getAttribute('data-id'));
+                        lightBox.start(mediaId);
                     })
                 })
     }
