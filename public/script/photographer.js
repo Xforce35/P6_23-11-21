@@ -1,4 +1,4 @@
-import PhotographerApi from 'api/PhotographerApi.js';
+import PhotographerApi from './api/PhotographerApi.js';
 import ProfileCard from './templates/ProfileCard.js';
 import mediaFactory from './factories/mediaFactory.js';
 import Portfolio from './models/portfolio.js';
@@ -6,7 +6,7 @@ import ContactForm from './models/ContactForm.js';
 
 class App{
   constructor(){
-    this.photographersApi = new PhotographerApi("./data/photographers.json");
+    this.photographersApi = new PhotographerApi("data/photographers.json");
     this.$profileWrapper = document.querySelector(".photographe_header");
     this.$mediasWrapper = document.querySelector(".displayMediaSection");
   }
