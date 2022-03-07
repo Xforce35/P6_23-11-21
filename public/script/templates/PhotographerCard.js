@@ -8,7 +8,7 @@ class PhotographerCard {
 
         const photographerCard = `
         <article class="photographer_section_profile">
-            <a class="photographer_section_profile_link" href="/photographer.html?id=${this._index.id}">
+            <a class="photographer_section_profile_link" href="./photographer.html?id=${this._index.id}">
                 <img src="${this._index.picture}" class="photographer_section_profile_link_picture" alt="Portrait de ${this._index.name}"></img>
                 <h2 class="photographer_section_profile_link_name">${this._index.name}</h2>
             </a>
