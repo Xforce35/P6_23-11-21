@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import PhotographerApi from './api/PhotographerApi.js';
+=======
+import PhotographerApi from 'api/PhotographerApi.js';
+>>>>>>> 6740f8bd72f0714d790c48da025e3f339f5d42bd
 import ProfileCard from './templates/ProfileCard.js';
 import mediaFactory from './factories/mediaFactory.js';
 import Portfolio from './models/portfolio.js';
