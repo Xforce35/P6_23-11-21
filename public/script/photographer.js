@@ -1,4 +1,4 @@
-import PhotographerApi from '../api/PhotographerApi.js';
+import PhotographerApi from '../../api/PhotographerApi.js';
 import ProfileCard from './templates/ProfileCard.js';
 import mediaFactory from './factories/mediaFactory.js';
 import Portfolio from './models/portfolio.js';
