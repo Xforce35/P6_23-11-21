@@ -55,11 +55,7 @@
   background-color: #db8876;
   color: #000000;
 }
-.photographer__profileCard__contactButton:focus,
-.photographer__profileCard__contactButton:hover {
-  background-color: #db8876;
-  color: #000000;
-}
+
 .photographer__profileCard {
   background-color: #fafafa;
   height: 300px;
@@ -69,6 +65,11 @@
   padding: 0 50px;
 }
 
+.photographer__profileCard__contactButton:focus,
+.photographer__profileCard__contactButton:hover {
+  background-color: #db8876;
+  color: #000000;
+}
 .photographer__profileCard__infos {
   margin-right: auto;
 }
