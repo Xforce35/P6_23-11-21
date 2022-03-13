@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "DM Sans", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  max-width: 1440px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  padding-bottom: 25px;
+}
+
+img,
+video {
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}

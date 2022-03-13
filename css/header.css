@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  margin-top: 44px;
+}
+
+h1 {
+  color: #901c1c;
+  margin-right: 100px;
+  font-size: 2.25em;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 100px;
+}
+
+.header-photographer {
+  margin: 15px 0px;
+}

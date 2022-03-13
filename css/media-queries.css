@@ -1,0 +1,288 @@
+@media (min-width: 320px) and (max-width: 1023px) {
+  h1 {
+    font-size: 1.75em;
+    margin-right: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    margin-top: 40px;
+  }
+
+  .photographer_section_profile_link_name {
+    font-size: 1.75em;
+  }
+
+  .logo {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    height: 35px;
+  }
+  .photographer_section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 50px;
+  }
+
+  .displayMediaSection {
+    justify-content: center;
+    padding-bottom: 0px;
+    padding-top: 5px;
+  }
+
+  .displayMediaSection__mediaCard__picture {
+    width: 260px;
+    height: 260px;
+    object-position: 50% 25%;
+  }
+
+  .displayMediaSection__mediaCard__desc {
+    font-size: 0.925em;
+  }
+
+  .boxLikesPrice {
+    width: 150px;
+    height: 40px;
+    left: 5px;
+    bottom: 2px;
+    font-size: 0.75em;
+    padding: 15px 15px 10px 15px;
+    border-radius: 5px;
+  }
+
+  .boxLikesPrice svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .photographer__profileCard__contactButton {
+    font-size: 1em;
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+    margin-right: 0px;
+    z-index: 1;
+    height: 40px;
+    width: 150px;
+  }
+
+  .photographer__profileCard {
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 180px;
+    width: 280px;
+  }
+
+  .photographer__profileCard__infos {
+    margin-right: auto;
+  }
+
+  .photographer__profileCard__infos__name {
+    font-size: 1.875em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .photographer__profileCard__infos__location {
+    font-size: 1em;
+  }
+
+  .photographer__profileCard__infos__description {
+    font-size: 0.8125em;
+    margin: 15px 0;
+  }
+
+  .photographer__profileCard__picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .works-sort {
+    margin: 20px 0px;
+  }
+
+  .works-sort > span {
+    font-size: 0.75em;
+    margin-left: 16px;
+  }
+
+  .sort-btn,
+  .hidden-sort {
+    font-size: 0.75em;
+    width: 120px;
+    top: 261px;
+  }
+
+  .sort {
+    font-size: 0.75em;
+    width: 120px;
+  }
+
+  .sort-li ::before {
+    top: 33px;
+    width: 90px;
+  }
+
+  .sort-radius-2 ::before {
+    top: 69px;
+    width: 90px;
+  }
+
+  .arrow-down {
+    margin-left: 70px;
+  }
+
+  .arrow-up-close {
+    margin-left: 16px;
+  }
+
+  .lightbox-body span {
+    padding: 0 5px;
+  }
+
+  .works-lightbox-media {
+    width: 90%;
+    height: 80%;
+  }
+
+  .works-lightbox-media-name {
+    width: 90%;
+    font-size: 1.1em;
+  }
+
+  .works-lightbox-video {
+    height: 160px;
+    width: 220px;
+  }
+
+  .works-lightbox-video-name {
+    width: 220px;
+    font-size: 1.1em;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 15px 30px;
+    top: 15px;
+  }
+
+  .modal header {
+    height: 51px;
+    justify-content: flex-end;
+    margin-top: 26px;
+  }
+
+  .modal header h2 {
+    font-size: 1.5625em;
+  }
+
+  form label {
+    font-size: 0.875em;
+  }
+
+  .text-control {
+    padding: 4px;
+    height: 30px;
+  }
+
+  .modal_cross-icons {
+    width: 20px;
+  }
+
+  .modal_cross {
+    top: 20px;
+    right: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .photographer_section {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 75px;
+  }
+
+  .displayMediaSection {
+    justify-content: center;
+    padding-bottom: 0px;
+    padding-top: 5px;
+  }
+
+  .photographer__profileCard {
+    height: 260px;
+    width: 690px;
+  }
+
+  .photographer__profileCard__infos__name {
+    font-size: 2.375em;
+  }
+
+  .photographer__profileCard__infos__location {
+    font-size: 1.25em;
+    margin-top: 10px;
+  }
+
+  .photographer__profileCard__picture {
+    height: 150px;
+    width: 150px;
+    margin-left: 60px;
+  }
+
+  .displayMediaSection__mediaCard {
+    padding-bottom: 35px;
+  }
+
+  .displayMediaSection__mediaCard__picture {
+    width: 420px;
+    height: 420px;
+  }
+
+  .sort {
+    width: 160px;
+  }
+
+  .sort-btn,
+  .hidden-sort {
+    top: 341px;
+  }
+
+  .modal header {
+    margin-top: 20px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 15px 30px;
+    top: 15px;
+  }
+  .modal_cross {
+    top: 25px;
+    right: 35px;
+  }
+
+  .works-lightbox-video {
+    width: 440px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+  .photographer__profileCard {
+    height: 240px;
+  }
+
+  .photographer__profileCard__infos__name {
+    font-size: 3.125em;
+  }
+
+  .sort-btn,
+  .hidden-sort {
+    top: 385px;
+  }
+
+  .displayMediaSection {
+    justify-content: space-around;
+  }
+}
