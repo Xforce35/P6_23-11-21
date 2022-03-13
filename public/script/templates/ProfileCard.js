@@ -14,7 +14,7 @@ class ProfileCard {
                     <p class="photographer__profileCard__infos__description">${this._index.tagline}</p>
             </div>
             <button class="photographer__profileCard__contactButton contact_button">Contactez-moi</button>
-            <img class="photographer__profileCard__picture" src="../public/assets/photographers/${this._index.portrait}" alt="Portrait de ${this._index.name}">
+            <img class="photographer__profileCard__picture" src="public/assets/photographers/${this._index.portrait}" alt="Portrait de ${this._index.name}">
         </article>
     `
     
