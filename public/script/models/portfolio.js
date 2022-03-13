@@ -35,15 +35,28 @@ class Portfolio {
         })
     }
 
+    keyboardLikes() {
+        this.medias.forEach(media => {
+            let heartDom = document.querySelector(`.displayMediaSection__mediaCard__desc__likes[data-id="${media.id}"]`)
+            heartDom.addEventListener('keydown', (key) => {
+                if (key.code == "Enter") {
+                    // console.log("123");
+                    media.toggle();
+                    this.countTotal();
+                    this.updateTotal();
+                }
+            });
+        })
+    }
     // fonction ou on initie toutes fonctions
     start() {
-        this.medias.sort((a, b)  => b.likes - a.likes);
         this.display();
         this.countTotal();
         this.displayBox();
         this.listenForLikes();
         this.listenDropdown();
         this.LightBox();
+        this.keyboardLikes();
     }
 
     // fonction pour afficher la zone ou j'affiche le prix et nombre total de like d'un photographe
@@ -177,7 +190,7 @@ class Portfolio {
                     item.addEventListener("click", (e) =>
                     {
                         let mediaId = e.target.closest('article').getAttribute('data-id');
-                        console.log(e.target.closest('article').getAttribute('data-id'));
+                        // console.log(e.target.closest('article').getAttribute('data-id'));
                         lightBox.start(mediaId);
                     })
                 })
