@@ -37,6 +37,7 @@ class Portfolio {
 
     // fonction ou on initie toutes fonctions
     start() {
+        this.medias.sort((a, b)  => b.likes - a.likes);
         this.display();
         this.countTotal();
         this.displayBox();
