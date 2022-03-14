@@ -27,10 +27,10 @@
           <button class="sort-btn" aria-haspopup="listbox" aria-expanded="false"  aria-label="Tri actuel par Popularité">Popularité
             <span class="fas fa-chevron-down arrow-down"></span>
           </button>
-            <ul class="hidden-sort" role="listbox">
-              <li class="sort sort-radius-1" role='option' data-filter="popularity" aria-label="Tri actuel par Popularité" aria-selected="true"><button type="button" data-filter="popularity" class="style">Popularité <span class="fas fa-chevron-up arrow-up-close" aria-hidden="true"></span></button></li>
-              <li class="sort sort-li" role='option' data-filter="date" aria-label="Tri actuel par Date" aria-selected="false"><button type="button" data-filter="date" class="style">Date</button></li>
-              <li class="sort sort-radius-2" role='option' data-filter="title" aria-label="Tri actuel par Titre" aria-selected="false"><button type="button" data-filter="title" class="style">Tître</button></li>
+            <ul class="hidden-sort" role="listbox" aria-activedescendant="popularity">
+              <li class="sort sort-radius-1" role='option' id="popularity" aria-label="Tri actuel par Popularité" aria-selected="true"><button type="button" data-filter="popularity" class="style">Popularité <span class="fas fa-chevron-up arrow-up-close" aria-hidden="true"></span></button></li>
+              <li class="sort sort-li" role='option' id="date" aria-label="Tri actuel par Date" aria-selected="false"><button type="button" data-filter="date" class="style">Date</button></li>
+              <li class="sort sort-radius-2" role='option' id="title" aria-label="Tri actuel par Titre" aria-selected="false"><button type="button" data-filter="title" class="style">Tître</button></li>
             </ul>
         </div>
       </div>
