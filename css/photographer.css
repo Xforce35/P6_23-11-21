@@ -1,7 +1,8 @@
 @import url("modal.css");
 @import url("nav.css");
 @import url("lightbox.css");
-@import url("style.css");
+@import url("root.css");
+@import url("header.css");
 
 .photographer__profileCard__contactButton:focus,
 .photographer__profileCard__contactButton:hover {
