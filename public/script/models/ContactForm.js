@@ -117,7 +117,7 @@ class ContactForm {
       }
     this.hideError (el);
     return true
-  };
+  }
 
   //fonction qui permets de valider le nom
   validateLastName () {
@@ -135,7 +135,7 @@ class ContactForm {
       }
     this.hideError (el);
     return true
-  };
+  }
 
   //fonction qui permets de valider l'email
   validateEmail () {
@@ -148,7 +148,7 @@ class ContactForm {
       }
     this.hideError (el);
     return true
-  };
+  }
 
   //fonction qui permets de valider le message
   validateMessage () {
@@ -165,7 +165,7 @@ class ContactForm {
       } 
     this.hideError(el);
     return true
-  };
+  }
 
   //fonction pour afficher les messages et changer le style
   ShowError(el, message) {

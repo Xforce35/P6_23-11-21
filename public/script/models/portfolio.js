@@ -166,7 +166,7 @@ class Portfolio {
                 let hiddenSort = document.getElementsByClassName('hidden-sort');
                 hiddenSort[0].style.display = "none";
                 this.openButton.focus();
-            };
+            }
         })
     }   
 
