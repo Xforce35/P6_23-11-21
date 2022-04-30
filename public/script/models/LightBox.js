@@ -61,15 +61,16 @@ class LightBox {
     }
     // naviguer au clavier dans la lightbox
     keyboard() {
-        document.addEventListener('keydown', (key) => {
-            if (key.code == "Escape") {
+        document.addEventListener('keydown', (e) => {
+            // console.log(e) 
+            if (e.code == "Escape" || e.KeyCode == "27") {
                 let lightBox = document.querySelector('.works-lightbox');
                 lightBox.style.display = 'none';
             }
-            else if (key.code == "ArrowRight") {
+            else if (e.code == "ArrowRight" || e.code == "Numpad6") {
                 this.next()
             }
-            else if (key.code == "ArrowLeft") {
+            else if (e.code == "ArrowLeft" || e.code == "Numpad4") {
                 this.previous()
             }
         })

@@ -1,6 +1,6 @@
 @import url("photographer.css");
 @import url("header.css");
-@import url("media-queries.css");
+/* @import url("media-queries.css"); */
 @import url("root.css");
 
 .photographer_section {
@@ -56,4 +56,44 @@
   font-size: 0.875em;
   text-align: center;
   color: #000000;
+}
+
+/* MEDIAS QUIERIES */
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  h1 {
+    font-size: 1.75em;
+    margin-right: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    margin-top: 40px;
+  }
+
+  .photographer_section_profile_link_name {
+    font-size: 1.75em;
+  }
+
+  .logo {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    height: 35px;
+  }
+  .photographer_section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .photographer_section {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 75px;
+  }
 }

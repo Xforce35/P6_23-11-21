@@ -33,11 +33,8 @@ class App{
       // console.log(portfolio.medias);
     });
     portfolio.start();
-    // portfolio.display();
-    // // console.log(photographerRaw, mediasRaw);
-    // portfolio.countTotal();
-    // portfolio.displayBox();
-    // portfolio.listenForLikes();
+  // console.log(photographerRaw, mediasRaw);
+
     //fonction pour ouvrir le modal de contact du photographe
     const contactForm = new ContactForm(namePhototgrapher);
     document.querySelector(".photographer__profileCard__contactButton").addEventListener("click", () =>{
