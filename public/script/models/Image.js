@@ -7,7 +7,7 @@ class Image extends Media {
         super(data)
 		// this._title = data.title
         this._src = data.image
-	    }
+    }
 
     get src() {
         return this._src

@@ -35,6 +35,7 @@ class Portfolio {
         })
     }
 
+    // fonction pour rajouter un like avec la touche "entrer" pour les nons voyants
     keyboardLikes() {
         this.medias.forEach(media => {
             let heartDom = document.querySelector(`.displayMediaSection__mediaCard__desc__likes[data-id="${media.id}"]`)
@@ -48,6 +49,7 @@ class Portfolio {
             });
         })
     }
+
     // fonction ou on initie toutes fonctions
     start() {
         this.display();
@@ -69,7 +71,6 @@ class Portfolio {
     countTotal() {
         this.totalLikes = this.medias.reduce((total , media) => total + media.likes, 0);
     }
-    
     
     // fonction pour ecouter le menu de tri par filtre
     listenDropdown() {

@@ -7,7 +7,7 @@ class Media {
 		this._date = data.date
 		this._price = data.price
         this.hasBeenLiked = false;
-	    }
+    }
 
     get id() {
         return this._id
@@ -37,6 +37,7 @@ class Media {
         return this._price
     }
     
+    // fonction pour verifier si un média a deja etait liker
     toggle(){
         let heartDom = document.querySelector(`.displayMediaSection__mediaCard__desc__likes[data-id="${this._id}"]`)
 
@@ -52,10 +53,12 @@ class Media {
         
     }
 
+    // fonction pour rajouter un like
     like(){
         this._likes++;
     }
 
+    // fonction pour supprimer un like
     dislike() {
         this._likes--;
     }

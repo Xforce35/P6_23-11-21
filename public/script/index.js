@@ -7,7 +7,7 @@ class App {
     this.$photographersWrapper = document.querySelector(".photographer_section");
     this.photographersApi = new PhotographerApi("data/photographers.json");
   }
-  //Classe pour lancer l'api et retourner les données pour chacun des photographes
+  //Classe pour lancer l'api et retourner ainsi qu'afficher les données pour chacun des photographes
   async main() {
     // console.log(PhotographerApi);
     const photographersData = await this.photographersApi.getPhotographers();

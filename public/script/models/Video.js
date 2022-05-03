@@ -6,7 +6,7 @@ class Video extends Media {
     constructor(data) {
         super (data)
         this._src = data.video
-	    }
+    }
 
         get src() {
             return this._src

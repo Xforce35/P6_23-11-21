@@ -2,7 +2,7 @@ export default class VideoTemplate {
     constructor({ id, title, src, likes, date }) {
         const content = `
         <article data-date=${date} class="displayMediaSection__mediaCard" data-id="${id}">
-            <a href="#" class="displayMediaSection__mediaCard__link" aria-label="${title}, closeup view">
+            <a href="#" class="displayMediaSection__mediaCard__link" aria-label="${title}">
                 <video class="displayMediaSection__mediaCard__picture">
                     <source src="public/assets/media/${src}" type="video/mp4" alt="${title}">
                 </video>

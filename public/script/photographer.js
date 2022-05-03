@@ -42,6 +42,7 @@ class App{
     })
   }
   
+  // fonction pour retourner une page d'un photographe selon son Id
   getFromURL(key) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(key);

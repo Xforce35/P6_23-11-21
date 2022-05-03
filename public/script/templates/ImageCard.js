@@ -2,7 +2,7 @@ export default class ImageTemplate {
     constructor({ id, title, src, likes, date}) {
         const content = `
         <article data-date=${date} class="displayMediaSection__mediaCard" data-id="${id}">
-            <a href="#" class="displayMediaSection__mediaCard__link" aria-label="${title}, closeup view">
+            <a href="#" class="displayMediaSection__mediaCard__link" aria-label="${title}">
                 <img src="public/assets/media/${src}" class="displayMediaSection__mediaCard__picture" alt="${title}">
             </a>
             <div class="displayMediaSection__mediaCard__desc">
